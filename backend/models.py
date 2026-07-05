@@ -5,6 +5,7 @@ from datetime import date
 class Library(Base):
     __tablename__ = "library"
     id: Mapped[int] = mapped_column(primary_key=True)
+    rawg_id: Mapped[str]
     slug: Mapped[str]
     name: Mapped[str]
     game_description: Mapped[str]
