@@ -8,17 +8,15 @@ class Library(Base):
     rawg_id: Mapped[int]
     slug: Mapped[str]
     name: Mapped[str]
-    game_description: Mapped[str]
-    date_released: Mapped[date]
+    released: Mapped[date]
     background_image: Mapped[str] | None
     metacritic: Mapped[int] | None
     rating: Mapped[float] | None
     ratings_count: Mapped[int] | None
-    date_updated: Mapped[date]
-    platforms: Mapped[str]
-    genres: Mapped[str]
-    developers: Mapped[str]
+    updated: Mapped[date]
+    platforms: Mapped[str] | None
+    genres: Mapped[str] | None
     status: Mapped[str] | None
-    my_rating: Mapped[int] | None
+    user_rating: Mapped[int] | None
     comment: Mapped[str] | None
     date_added: Mapped[date] = mapped_column(default=date.today)
