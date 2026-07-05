@@ -9,16 +9,16 @@ class Library(Base):
     slug: Mapped[str]
     name: Mapped[str]
     game_description: Mapped[str]
-    released: Mapped[date]
+    date_released: Mapped[date]
     background_image: Mapped[str] | None
     metacritic: Mapped[int] | None
     rating: Mapped[float] | None
     ratings_count: Mapped[int] | None
-    updated: Mapped[date]
+    date_updated: Mapped[date]
     platforms: Mapped[str]
     genres: Mapped[str]
     developers: Mapped[str]
     status: Mapped[str] | None
     my_rating: Mapped[int] | None
     comment: Mapped[str] | None
-    added_at: Mapped[date] = mapped_column(default=date.today)
+    date_added: Mapped[date] = mapped_column(default=date.today)
