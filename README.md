@@ -159,5 +159,3 @@ These are deliberately out of scope for v1, to keep the project focused on core 
 - [ ] `pytest` + `TestClient` coverage for the library CRUD endpoints
 - [ ] Normalize `games` and `library` into separate tables with a foreign key
 - [ ] Swap SQLite → PostgreSQL (one-line change to `database.py`) + Docker Compose
-- [ ] Deploy (e.g. Cloud Run) with a live demo link
-- [ ] Alembic migrations instead of `create_all`
